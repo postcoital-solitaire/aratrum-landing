@@ -11,3 +11,4 @@ db.sqlite-journal
 
 
 # Ignore patterns for React
+.idea
