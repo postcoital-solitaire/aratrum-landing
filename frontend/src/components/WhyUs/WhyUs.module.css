@@ -1,0 +1,41 @@
+.wrapper {
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    gap: 80px 100px;
+}
+
+.feature {
+    display: flex;
+    column-gap: 20px;
+}
+
+.featureTitle {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+.featureImage {
+    width: 110px;
+    aspect-ratio: 1;
+}

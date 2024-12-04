@@ -1,0 +1,33 @@
+.wrapper {
+    background-color: #213158;
+    color: #fff;
+}
+
+.wrapper a {
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1210px;
+
+    padding: 50px 15px 75px;
+    margin: 0 auto;
+}
+
+.column {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.column.logo {
+    max-width: 200px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+}
