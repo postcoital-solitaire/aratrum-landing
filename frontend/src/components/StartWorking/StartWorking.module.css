@@ -1,0 +1,88 @@
+.wrapper {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    column-gap: 80px;
+}
+
+.title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+
+    margin-bottom: 40px;
+}
+
+.card {
+    display: grid;
+    grid-template-areas:
+            "title title"
+            "text image"
+            "link image";
+
+    gap: 30px 20px;
+
+    max-width: 510px;
+    padding: 20px 15px;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fff;
+    color: var(--text-main);
+}
+
+.card.inverted {
+    color: #fff;
+    background: linear-gradient(#577FE3, #345ABB, #1346C7);
+}
+
+.card:hover .cardLink {
+    text-decoration: underline;
+}
+
+.card::before {
+    box-sizing: content-box;
+    position: absolute;
+    z-index: -1;
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    padding: 4px;
+    border-radius: 10px;
+
+    top: -4px;
+    left: -4px;
+
+    background: linear-gradient(#577FE3, #345ABB, #1346C7);
+}
+
+.cardTitle {
+    grid-area: title;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.cardText {
+    grid-area: text;
+}
+
+.cardLink {
+    grid-area: link;
+    color: var(--text-main);
+}
+
+.card.inverted .cardLink {
+    color: #fff;
+}
+
+.cardImage {
+    grid-area: image;
+}

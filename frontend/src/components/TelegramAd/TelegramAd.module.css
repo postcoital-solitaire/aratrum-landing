@@ -1,0 +1,82 @@
+.wrapper {
+    padding: 40px 0 80px;
+}
+
+.container {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding: 40px;
+    border-radius: 8px;
+
+    background-color: #f4f7ff;
+}
+
+.container::before {
+    box-sizing: content-box;
+    position: absolute;
+    z-index: -1;
+    content: "";
+
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+    background: linear-gradient(#577FE3, #345ABB, #1346C7);
+    top: -4px;
+    left: -4px;
+
+    box-shadow: 0 4px 10px rgba(30, 77, 194, .20);
+}
+
+.description {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.text {
+    margin: 40px 0;
+    font-size: 1.25rem;
+}
+
+.button {
+    align-self: center;
+
+    padding: 14px 26px;
+    border-radius: 5px;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #31509E;
+
+    box-shadow: 0 5px 10px rgba(54, 69, 76, .2);
+}
+
+.button:hover {
+    background-color: #2d4890;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    bottom: -35px;
+    left: -25px;
+}

@@ -1,0 +1,13 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Martel+Sans&family=Oswald:wght@200..700&family=Russo+One&display=swap');
+
+:root {
+    --purple-accent: #F2359C;
+    --text-main: #353747;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 0.875rem;
+    color: var(--text-main);
+}
