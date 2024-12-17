@@ -43,3 +43,21 @@
     transition: 0.2s background-color;
     background-color: #DC0C7D;
 }
+
+@media (max-width: 1023px) {
+    .image {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .title {
+        height: 60px;
+    }
+}

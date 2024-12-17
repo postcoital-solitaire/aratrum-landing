@@ -15,7 +15,9 @@
 
 .cards {
     display: flex;
-    column-gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
 .card {
@@ -23,7 +25,7 @@
     overflow: hidden;
     
     flex-shrink: 0;
-    max-width: 270px;
+    max-width: 250px;
 
     display: flex;
     flex-direction: column;

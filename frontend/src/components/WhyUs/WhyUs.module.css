@@ -1,5 +1,5 @@
 .wrapper {
-    padding-bottom: 80px;
+    padding: 0 15px 80px;
 }
 
 .container {
@@ -38,4 +38,26 @@
 .featureImage {
     width: 110px;
     aspect-ratio: 1;
+}
+
+@media (max-width: 1023px) {
+    .wrapper {
+        padding-bottom: 0;
+    }
+
+    .grid {
+        gap: 40px 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .featureImage {
+        height: 70px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
 }

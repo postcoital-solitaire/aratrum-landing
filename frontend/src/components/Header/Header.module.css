@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     background-color: #577FE3;
 }
 
@@ -32,4 +33,20 @@
     font-size: 1.125rem;
 
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.openedMenu {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 100%;
+    bottom: -190px;
+    background-color: #577FE3;
+}
+
+.openedLinks {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    row-gap: 20px;
 }

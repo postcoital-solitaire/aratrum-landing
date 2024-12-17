@@ -1,5 +1,5 @@
 .wrapper {
-    padding-bottom: 80px;
+    padding: 0 15px 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,4 +85,11 @@
 
 .cardImage {
     grid-area: image;
+}
+
+@media (max-width: 767px) {
+    .cards {
+        flex-direction: column;
+        row-gap: 30px;
+    }
 }
