@@ -1,8 +1,10 @@
 .wrapper {
-    padding: 60px 0 80px;
+    padding: 60px 15px 80px;
 }
 
 .container {
+    overflow: hidden;
+    
     display: flex;
     justify-content: space-between;
 
@@ -27,6 +29,36 @@
 }
 
 .text {
+    position: relative;
+    z-index: 1;
+
     max-width: 470px;
     font-size: 1.25rem;
+}
+
+@media (max-width: 1023px) {
+    .image {
+        height: 200px;
+        position: absolute;
+        right: -5%;
+        bottom: -85px;
+    }
+
+    .container {
+        justify-content: center;
+        position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 30px 20px 40px;
+    }
+
+    .image {
+        height: 200px;
+        position: absolute;
+        right: -5%;
+        bottom: -150px;
+    }
 }

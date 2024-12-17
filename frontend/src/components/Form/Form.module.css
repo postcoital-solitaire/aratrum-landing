@@ -5,7 +5,7 @@
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: start;
     column-gap: 105px;
 
     max-width: 1210px;
@@ -64,4 +64,25 @@
 .button:hover {
     transition: 0.2s background-color;
     background-color: #DC0C7D;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        justify-content: center;
+    }
+
+    .image {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+
 }

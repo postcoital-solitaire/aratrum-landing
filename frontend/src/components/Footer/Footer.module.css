@@ -31,3 +31,18 @@
     font-size: 1rem;
     font-weight: 700;
 }
+
+@media (max-width: 767px) {
+    .column {
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .column.logo {
+        order: 2;
+    }
+}

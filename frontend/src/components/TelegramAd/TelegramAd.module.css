@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 40px 0 80px;
+    padding: 40px 15px 80px;
 }
 
 .container {
@@ -54,6 +54,8 @@
 }
 
 .button {
+    position: relative;
+    z-index: 1;
     align-self: center;
 
     padding: 14px 26px;
@@ -79,4 +81,28 @@
     position: absolute;
     bottom: -35px;
     left: -25px;
+}
+
+.iconAdaptive {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        overflow: hidden;
+        border: 4px solid #345ABB;
+        box-shadow: 0 4px 10px rgba(30, 77, 194, .20);
+    }
+    
+    .image {
+        display: none;
+    }
+
+    .iconAdaptive {
+        height: 150px;
+        display: block;
+        position: absolute;
+        right: -50px;
+        bottom: -50px;
+    }
 }
