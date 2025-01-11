@@ -29,7 +29,7 @@ function Form() {
     const validationErrors = validate();
 
     if (Object.keys(validationErrors).length === 0) {
-      const response = await fetch("/new-reply", {
+      const response = await fetch("http://localhost:8000/new-reply", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
