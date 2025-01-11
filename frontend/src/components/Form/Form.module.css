@@ -66,6 +66,23 @@
     background-color: #DC0C7D;
 }
 
+.inputError {
+    margin-top: 10px;
+    color: #e03939;
+}
+
+.status {
+    margin: 0 0 10px;
+}
+
+.status.fail {
+    color: #e03939;
+}
+
+.status.success {
+    color: #00ac0b;
+}
+
 @media (max-width: 1023px) {
     .container {
         justify-content: center;
