@@ -10,7 +10,7 @@
 
 1. Установите Python и Node.js.
 
-Скачайте и установите [последнюю версию Python для Windows](https://www.python.org/downloads/), не забудьте поставить галочку около "Add Python to PATH": затем скачайте и установите [последнюю версию Node.js для Windows](https://nodejs.org/).
+Скачайте и установите [последнюю версию Python для Windows](https://www.python.org/downloads/), не забудьте поставить галочку около "Add Python to PATH". Затем скачайте и установите [последнюю версию Node.js для Windows](https://nodejs.org/).
 
 2. Скачайте и распакуйте исходный код с репозитория.
 
